@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/font-awesome.min.css">
+    <script src="bundle.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <title>Lepidopterans</title>
+</head>
+
+<body>
+
+<script src="./bundle.js"></script>
+
+<nav class="navbar navbar-light navbar-bg text-center mb-5">
+    <div class="container-fluid-nav text-center mx-auto fs-1 text-light">
+        Lepidopterans
+    </div>
+</nav>
+<img src="./assets/icon.png" alt="" class="icon">
+
+<div class="m-5 w-75 mx-auto">
+    <em>Lepidopterans</em> are blah blah blah. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<div class="vstack gap-5 mb-5">
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <h2>Shape</h2>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">Normal</th>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Cute</th>
+                        <td>54</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Long</th>
+                        <td>52</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Moth</th>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Small</th>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Tail</th>
+                        <td>15</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <div class="row mb-3">
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <div class="me-2">Click to refresh</div>
+                        <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomShapes()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-3 g-3" id="shape-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <h2>Color</h2>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">White</th>
+                        <td>44</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Turquoise</th>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Black</th>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Blue</th>
+                        <td>31</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Green</th>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Yellow</th>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Red</th>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Orange</th>
+                        <td>14</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <div class="row mb-3">
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <div class="me-2">Click to refresh</div>
+                        <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomColors()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-3 g-3" id="color-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <h2>Pattern</h2>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">Mosaic</th>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Gradient</th>
+                        <td>59</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Mandelbrot</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Dots</th>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Solid</th>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Special</th>
+                        <td>6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <div class="row mb-3">
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <div class="me-2">Click to refresh</div>
+                        <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomPatterns()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-3 g-3" id="pattern-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <h2>Antennae</h2>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">Antennae</th>
+                        <td>144</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">No antennae</th>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Curly antennae</th>
+                        <td>30</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <div class="row mb-3">
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <div class="me-2">Click to refresh</div>
+                        <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomAntennae()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-3 g-3" id="antennae-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <h2>Border</h2>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Count</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="col">No border</th>
+                        <td>122</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Colored border</th>
+                        <td>108</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-lg">
+            <div class="p-4 border bg-light">
+                <div class="row mb-3">
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <div class="me-2">Click to refresh</div>
+                        <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomBorders()">
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-cols-3 g-3" id="border-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
