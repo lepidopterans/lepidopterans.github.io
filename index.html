@@ -15,19 +15,31 @@
 <script src="./bundle.js"></script>
 
 <nav class="navbar navbar-light navbar-bg text-center mb-5">
-    <div class="container-fluid-nav text-center mx-auto fs-1 text-light">
+    <div class="container-fluid-nav text-center mx-auto text-responsive text-light text-offset">
         Lepidopterans
     </div>
+    <!-- <button class="btn btn-md btn-outline-secondary mr-5" type="button">View all</button> -->
 </nav>
 <img src="./assets/icon.png" alt="" class="icon">
 
 <div class="m-5 w-75 mx-auto">
-    <em>Lepidopterans</em> are blah blah blah. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <!-- TODO: add page to filter by attribute, add prices, curated -->
+
+    <div class="text-center">
+        Jump to: <a href="#shape-section">Shapes</a> | <a href="#color-section">Colors</a> | <a href="#pattern-section">Patterns</a> | <a href="#antennae-section">Antennae</a> | <a href="#border-section">Borders</a>
+    </div>
+    <br/><br/>
+    <em>Lepidopterans</em> are a collection of 230 unique NFT [<a href="#references">1</a>] illustrations, hosted on the Kusama blockchain [<a href="#references">2</a>] and easily available through the Singular marketplace [<a href="#references">3</a>]. Lepidopterans are bought, sold, and managed securely via the decentralized RMRK protocol [<a href="#references">4</a>].
+    Each illustration is a butterfly or moth (<em>lepidoptera</em>) with a distinct combination of attributes: wing shape, color, wing pattern, antennae, and wing border. Some attributes occur in only a few lepidoptera, while others are more common. The frequency of each attribute is described in tables below.
+    <br/><br/>
+    The name <em>Lepidoptera</em> is derived from Greek, meaning "scaly winged," and refers to the characteristic covering of microscopic dust-like scales on butterfly and moth wings.
+    <br/><br/>
+    RMRK (pronounced "remark") is a set of standards on the Kusama blockchain [<a href="#references">2</a>] which compose five "NFT lego" primitives. By leveraging RMRK and Kusama's multi-chain architecture, Lepidopteran NFTs are eternally liquid and seamlessly portable to any connected parachain.
 </div>
 
 <div class="vstack gap-5 mb-5">
 
-<div class="container">
+<div class="container" id="shape-section">
     <div class="row g-4">
         <div class="col-lg">
             <div class="p-4 border bg-light">
@@ -42,7 +54,7 @@
                     <tbody>
                     <tr>
                         <th scope="col">Normal</th>
-                        <td>60</td>
+                        <td>61</td>
                     </tr>
                     <tr>
                         <th scope="col">Cute</th>
@@ -50,11 +62,11 @@
                     </tr>
                     <tr>
                         <th scope="col">Long</th>
-                        <td>52</td>
+                        <td>50</td>
                     </tr>
                     <tr>
                         <th scope="col">Moth</th>
-                        <td>26</td>
+                        <td>27</td>
                     </tr>
                     <tr>
                         <th scope="col">Small</th>
@@ -73,7 +85,7 @@
             <div class="p-4 border bg-light">
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end align-items-center">
-                        <div class="me-2">Click to refresh</div>
+                        <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomShapes()">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
@@ -85,7 +97,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="color-section">
     <div class="row g-4">
         <div class="col-lg">
             <div class="p-4 border bg-light">
@@ -100,7 +112,7 @@
                     <tbody>
                     <tr>
                         <th scope="col">White</th>
-                        <td>44</td>
+                        <td>33</td>
                     </tr>
                     <tr>
                         <th scope="col">Turquoise</th>
@@ -108,7 +120,7 @@
                     </tr>
                     <tr>
                         <th scope="col">Black</th>
-                        <td>32</td>
+                        <td>26</td>
                     </tr>
                     <tr>
                         <th scope="col">Blue</th>
@@ -120,15 +132,15 @@
                     </tr>
                     <tr>
                         <th scope="col">Yellow</th>
-                        <td>26</td>
+                        <td>27</td>
                     </tr>
                     <tr>
                         <th scope="col">Red</th>
-                        <td>16</td>
+                        <td>31</td>
                     </tr>
                     <tr>
                         <th scope="col">Orange</th>
-                        <td>14</td>
+                        <td>15</td>
                     </tr>
                     </tbody>
                 </table>
@@ -139,7 +151,7 @@
             <div class="p-4 border bg-light">
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end align-items-center">
-                        <div class="me-2">Click to refresh</div>
+                        <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomColors()">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
@@ -151,7 +163,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container"  id="pattern-section">
     <div class="row g-4">
         <div class="col-lg">
             <div class="p-4 border bg-light">
@@ -174,7 +186,7 @@
                     </tr>
                     <tr>
                         <th scope="col">Mandelbrot</th>
-                        <td>50</td>
+                        <td>32</td>
                     </tr>
                     <tr>
                         <th scope="col">Dots</th>
@@ -182,11 +194,11 @@
                     </tr>
                     <tr>
                         <th scope="col">Solid</th>
-                        <td>26</td>
+                        <td>41</td>
                     </tr>
                     <tr>
                         <th scope="col">Special</th>
-                        <td>6</td>
+                        <td>9</td>
                     </tr>
                     </tbody>
                 </table>
@@ -197,7 +209,7 @@
             <div class="p-4 border bg-light">
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end align-items-center">
-                        <div class="me-2">Click to refresh</div>
+                        <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomPatterns()">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
@@ -209,7 +221,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="antennae-section">
     <div class="row g-4">
         <div class="col-lg">
             <div class="p-4 border bg-light">
@@ -228,11 +240,11 @@
                     </tr>
                     <tr>
                         <th scope="col">No antennae</th>
-                        <td>56</td>
+                        <td>54</td>
                     </tr>
                     <tr>
                         <th scope="col">Curly antennae</th>
-                        <td>30</td>
+                        <td>32</td>
                     </tr>
                     </tbody>
                 </table>
@@ -243,7 +255,7 @@
             <div class="p-4 border bg-light">
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end align-items-center">
-                        <div class="me-2">Click to refresh</div>
+                        <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomAntennae()">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
@@ -255,7 +267,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="border-section">
     <div class="row g-4">
         <div class="col-lg">
             <div class="p-4 border bg-light">
@@ -270,11 +282,11 @@
                     <tbody>
                     <tr>
                         <th scope="col">No border</th>
-                        <td>122</td>
+                        <td>123</td>
                     </tr>
                     <tr>
                         <th scope="col">Colored border</th>
-                        <td>108</td>
+                        <td>107</td>
                     </tr>
                     </tbody>
                 </table>
@@ -285,7 +297,7 @@
             <div class="p-4 border bg-light">
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end align-items-center">
-                        <div class="me-2">Click to refresh</div>
+                        <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomBorders()">
                             <i class="fa fa-refresh" aria-hidden="true"></i>
                         </button>
@@ -297,6 +309,17 @@
     </div>
 </div>
 
+</div>
+
+<div class="m-5 w-75 mx-auto" id="references">
+    <h2>References</h2>
+    [1] <a href="https://bitfalls.com/2018/10/15/the-last-nft-non-fungible-token-explanation-post-youll-ever-need/">What are NFTs?</a>
+    <br/>
+    [2] <a href="https://kusama.network">The Kusama blockchain</a>
+    <br/>
+    [3] <a href="https://singular.rmrk.app">The Singular marketplace</a>
+    <br/>
+    [4] <a href="https://www.rmrk.app/about">The RMRK protocol</a> (spec: <a href="https://github.com/rmrk-team/rmrk-spec">see here</a>)
 </div>
 
 </body>
