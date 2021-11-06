@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./assets/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
     <script src="bundle.js"></script>
     <link rel="icon" type="image/x-icon" href="assets/icon.png">
     <title>Lepidopterans</title>
@@ -14,16 +14,24 @@
 
 <script src="./bundle.js"></script>
 
-<nav class="navbar navbar-light navbar-bg text-center mb-5">
-    <div class="container-fluid-nav text-center mx-auto text-responsive text-light text-offset">
+<div class="d-flex flex-row justify-content-between align-items-center navbar-bg mb-5">
+    <div class="icon-container">
+        <img src="./assets/icon.png" alt="" class="icon">
+    </div>
+    <div class="text-light title-text">
         Lepidopterans
     </div>
-    <!-- <button class="btn btn-md btn-outline-secondary mr-5" type="button">View all</button> -->
-</nav>
-<img src="./assets/icon.png" alt="" class="icon">
+    <div class="button-container">
+        <a href="https://singular.rmrk.app/collections/02e9b1c0fa1f411974-LPDT">
+            <button type="button" class="btn btn-light">
+                Go to marketplace
+            </button>
+        </a>
+    </div>
+</div>
 
 <div class="m-5 w-75 mx-auto">
-    <!-- TODO: add page to filter by attribute, add prices, curated -->
+    <!-- TODO: add page to filter by attribute, curated -->
 
     <div class="text-center">
         Jump to: <a href="#shape-section">Shapes</a> | <a href="#color-section">Colors</a> | <a href="#pattern-section">Patterns</a> | <a href="#antennae-section">Antennae</a> | <a href="#border-section">Borders</a>
@@ -87,7 +95,7 @@
                     <div class="col d-flex justify-content-end align-items-center">
                         <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomShapes()">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fas fa-sync"></i>
                         </button>
                     </div>
                 </div>
@@ -153,7 +161,7 @@
                     <div class="col d-flex justify-content-end align-items-center">
                         <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomColors()">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fas fa-sync"></i>
                         </button>
                     </div>
                 </div>
@@ -211,7 +219,7 @@
                     <div class="col d-flex justify-content-end align-items-center">
                         <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomPatterns()">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fas fa-sync"></i>
                         </button>
                     </div>
                 </div>
@@ -257,7 +265,7 @@
                     <div class="col d-flex justify-content-end align-items-center">
                         <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomAntennae()">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fas fa-sync"></i>
                         </button>
                     </div>
                 </div>
@@ -299,7 +307,7 @@
                     <div class="col d-flex justify-content-end align-items-center">
                         <div class="me-2">Click to update</div>
                         <button type="button" class="btn btn-primary" onclick="Lepidopterans.randomBorders()">
-                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                            <i class="fas fa-sync"></i>
                         </button>
                     </div>
                 </div>
@@ -320,6 +328,12 @@
     [3] <a href="https://singular.rmrk.app">The Singular marketplace</a>
     <br/>
     [4] <a href="https://www.rmrk.app/about">The RMRK protocol</a> (spec: <a href="https://github.com/rmrk-team/rmrk-spec">see here</a>)
+</div>
+
+<div class="m-5 w-75 mx-auto" id="contact">
+    <h2>Contact</h2>
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/LepidopteranArt">@LepidopteranArt</a>
 </div>
 
 </body>
